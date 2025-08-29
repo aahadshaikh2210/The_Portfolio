@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aahad Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+    
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Aahad</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#languages">Languages</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="uploads/iam_2.jpg" class="developer-svg" style="border-radius: 50%;">
+            
+            <h1>Hi, I'm Aahad</h1>
+            <p>I'm a passionate Full Stack web developer with expertise in creating beautiful, functional, and user-friendly websites and applications. I recently completed an internship at A2Z IT HUB PVT. LTD. where I worked on real-world projects.</p>
+            <div class="hero-buttons">
+    <a href="#projects" class="btn btn-primary">View My Work</a>
+    <a href="#" class="btn btn-outline" id="downloadCV">Download CV</a>
+</div>
+</section>
+
+<script>
+    document.getElementById('downloadCV').addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Create a temporary link element
+        const link = document.createElement('a');
+        link.href = 'uploads/Aahads_Resume.pdf'; // Correct path to your resume file
+        link.download = 'Aahads_Resume.pdf';
+        
+        // Simulate click to trigger download
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        
+        // Show confirmation message
+        alert('Your CV download has started!');
+    });
+</script>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    
+                    <p>Hello! I'm <b>Aahad</b>, a web developer based in Ahemednagar. I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between.</p>
+                    <p>My goal is to always build products that provide pixel-perfect, performant experiences while following best practices in web development.</p>
+                    <p>I recently completed an internship at A2Z IT HUB PVT. LTD. where I worked on real-world projects using HTML, CSS, Bootstrap, JavaScript, jQuery, PHP, CodeIgniter, and MySQL.</p>
+                    <a href="#contact" class="btn">Get In Touch</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Aahad">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-title">
+                <h2>Work Experience</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>Web Developer Intern</h3>
+                        <h4>A2Z IT HUB PVT. LTD.</h4>
+                        <p style="color:white;">January 2025 - Present</p>
+                        <p style="color:white;">Worked on real-world projects using HTML, CSS, Bootstrap, JavaScript, jQuery, PHP, CodeIgniter, and MySQL. Developed responsive web applications and implemented backend functionality.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>Freelance Web Developer</h3>
+                        <h4>Self-Employed</h4>
+                        <p style="color:white;">September 2024 - December 2024</p>
+                        <p style="color:white;">Created websites for small businesses and individuals. Designed and developed responsive layouts, implemented interactive features, and optimized for performance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-title">
+                <h2>Education</h2>
+            </div>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-info">
+                        <h3>Bachelor of Computer Science</h3>
+                        <h4>Dr.Babasaheb Ambedkar Marathwada University</h4>
+                        <p style="color:white;">2022 - Present</p>
+                        <p style="color:white;">Currently in third year, pursuing studies with honors. Specializing in web development, algorithms, and database management. Successfully completed multiple projects as part of the curriculum.</p>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="education-info">
+                        <h3>Full Stack Web Development</h3>
+                        <h4>A2Z IT HUB PVT. LTD.</h4>
+                        <p style="color:white;">2019 - 2020</p>
+                        <p style="color:white;">Intensive program covering HTML, CSS, JavaScript, JQuery, PHP, and Codeigniter. Built multiple projects and participated in hackathons.</p>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="education-info">
+                        <h3>12th</h3>
+                        <h4>Shriram Jr.Collage Kada</h4>
+                        <p style="color:white;">2021 - 2022</p>
+                        <p style="color:white;">Completed 12th standard in Science stream, specializing in ComputerScience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Skills</h2>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Frontend Development</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span style="color:white;">HTML/CSS</span>
+                            <span style="color:white;">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span style="color:white;">JavaScript</span>
+                            <span style="color:white;">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span style="color:white;">React</span>
+                            <span style="color:white;">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span style="color:white;">Bootstrap</span>
+                            <span style="color:white;">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend Development</h3>
+                    
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span style="color:white;">PHP</span>
+                            <span style="color:white;">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span style="color:white;">CodeIgniter</span>
+                            <span style="color:white;">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Database & Tools</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span style="color:white;">MySQL</span>
+                            <span style="color:white;">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85%"></div>
+                        </div>
+                    </div>
+                   
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span style="color:white;">Git</span>
+                            <span style="color:white;">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span style="color:white;">jQuery</span>
+                            <span style="color:white;">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section id="languages" class="languages">
+        <div class="container">
+            <div class="section-title">
+                <h2>Languages</h2>
+            </div>
+            <div class="languages-container">
+                <div class="language-item">
+                    <div class="language-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>Marathi</h3>
+                    <p>Native</p>
+                </div>
+                <div class="language-item">
+                    <div class="language-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>Hindi</h3>
+                    <p>Fluent</p>
+                </div>
+                <div class="language-item">
+                    <div class="language-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>English</h3>
+                    <p>Professional</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Website</h3>
+                        <p style="color:white;">A fully responsive e-commerce platform with product filtering, cart functionality, and secure checkout.</p>
+                        
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Travel Blog Platform</h3>
+                        <p style="color:white;">A travel blog with interactive maps, user authentication, and content management system.</p>
+                        
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Project 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Fitness App</h3>
+                        <p style="color:white;">A mobile fitness application with workout tracking, progress analytics, and social features.</p>
+                        
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Let's talk about your project</h3>
+                    <div class="contact-detail">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Ahemednagar, Maharashtra</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>aahadshaikh6084@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 8208786488</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn" onclick="send()">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.facebook.com/" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/aahadshaikh6084" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/shaikh_aahad_07/" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/aahad-shaikh-4ba868287/" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/aahadshaikh2210" class="social-link"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="copyright">© 2025 Aahad. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.innerHTML = navLinks.classList.contains('active') ? 
+                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Close mobile nav when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+        
+        // Animate skill bars when in viewport
+        const skillBars = document.querySelectorAll('.skill-progress');
+        
+        function animateSkillBars() {
+            skillBars.forEach(bar => {
+                const width = bar.getAttribute('data-width');
+                if (isElementInViewport(bar)) {
+                    bar.style.width = width;
+                }
+            });
+        }
+        
+        function isElementInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+        
+        // Run on load and scroll
+        window.addEventListener('load', animateSkillBars);
+        window.addEventListener('scroll', animateSkillBars);
+        
+        // Header scroll effect
+        const header = document.querySelector('header');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.style.padding = '10px 0';
+                header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.padding = '15px 0';
+                header.style.boxShadow = 'none';
+            }
+        });
+        
+        // CV Download functionality
+        document.getElementById('downloadCV').addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Create a dummy PDF download (in a real scenario, this would be your actual CV file)
+            const link = document.createElement('a');
+            link.href = '#'; // Replace with actual path to your CV file
+            link.download = 'Aahad_CV.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            
+            // Show a confirmation message
+            alert('Your CV download has started!');
+        });
+
+        function send(){
+            alert("Iam Connect you very soon....");
+        }
+    </script>
+</body>
+</html>
